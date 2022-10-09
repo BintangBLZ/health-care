@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="icon/manifest.json">
+    <meta name="theme-color" content="#2196f3"/>
+    <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="icon/images/icons/icon-192x192.png">
+</head>
+<body>
+    <body>
+        <header>
+            <nav class="nav-wrapper green darken-4">
+                <div class="container">
+                    <a href="#" class="brand-logo lime-text accent-1">Health<span class="white-text">.care</span></a>
+                    <a href="#" class="left sidenav-trigger"  data-target="slide-out"><img src="icon/iconMenu.png" alt="menu"></a>
+                    <ul  class="topnav right hide-on-med-and-down"></ul>
+                    <ul id="slide-out" class="sidenav"></ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div id="body-content"></div>
+        </main>
+      <footer class="page-footer green darken-4" id="pageFooter">
+       <div class="container"></div>
+        <div class="row">
+            <div class="col s6 left">
+                <a href="#" class="brand-logo lime-text accent-1">Health<span class="white-text">.care</span></a>
+                <p class="white-text text-accent-4"><q>Waktu dan kesehatan <br>Dua aset berharga yang tidak dikenali dan hargai <br>Sampai keduanya hilang" <br>~Denis Waitly~
+                </q></p>   
+                
+            </div>
+            <div class="col s6 right white-text">
+                <ul class="white-text footerNav left-align"></ul>   
+                
+            </div>
+        </div>
+      <div class="footer-copyright teal darken-4">
+                <div class="container center-align">
+                    Hak Cipta © 2022
+                <span class="lime-text accent-1"> Health<span class="white-text">.care</span></span>
+                </div>
+              </div>
+      </footer>
+        
+            
+        
+        <script src="js/materialize.min.js"></script>
+        <script src="index.js"></script>
+        <script id="add-on"></script>
+        <script>
+          // REGISTER SERVICE WORKER
+          if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function() {
+              navigator.serviceWorker
+                .register("/service-worker.js")
+                .then(function() {
+                  console.log("Pendaftaran ServiceWorker berhasil");
+                })
+                .catch(function() {
+                  console.log("Pendaftaran ServiceWorker gagal");
+                });
+            });
+          } else {
+            console.log("ServiceWorker belum didukung browser ini.");
+          }
+        </script>
+            
+</body>
+</html>

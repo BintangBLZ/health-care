@@ -1,0 +1,176 @@
+<div class="container">
+                <div class="row">
+                    <div class="col s12">
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="image/food-scale.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Apa Itu BMR?</span>
+                          <p>BMR atau basal metabolic rate adalah kebutuhan kalori yang tubuh Anda butuhkan untuk melakukan aktivitas basalnya. Saat Anda tidur atau duduk dan tidak melakukan aktivitas apapun, tubuh tetap melakukan aktivitasnya, seperti memompa jantung, mencerna makanan, bernapas, memperbaiki sel tubuh, membuang racun dalam tubuh, mempertahankan suhu tubuh, dan lain sebagainya.</p>
+                          <p>Dengan menghitung BMR Anda, maka Anda bisa mengetahui berapa kalori minimal yang tubuh Anda butuhkan untuk melakukan aktivitasnya. Dengan begitu, Anda bisa menurunkan asupan kalori Anda tanpa memengaruhi kerja tubuh dan kesehatan Anda.</p>
+                          <p>
+                            <ul>
+                                <span>Berdasarkan rumus Harris-Benedict yang telah direvisi oleh Roza dan Shizgal (1984):</span>
+                                <li>BMR laki-laki = 88.362 + (13.397 x BB kg) + (4.799 x TB cm) – (5.677 x umur tahun)</li>
+                                <li>BMR Wanita = 447.593 + (9.247 x BB kg) + (3.098 x TB cm) – (4.330 x umur tahun)</li>
+                            </ul>
+                          </p>
+                            <span class="card-title">Kebutuhan Kalori Harian</span>
+                            <p>Kebutuhan kalori harian adalah jumlah kalori yang dibutuhkan oleh tubuh Anda setiap hari, untuk menjalankan fungsi utama tubuh, dan untuk melakukan aktivitas sehari-hari.</p>
+                            <p>Kebutuhan kalori harian didapat dari angka BMR yang dikalikan dengan faktor aktivitas fisik.</p>
+                    
+                                <table class="highlight">
+                                    <thead>
+                                      <tr>
+                                          <th>Kriteria Aktifitas</th>
+                                          <th>Pria</th>
+                                          <th>Wanita</th>
+                                      </tr>
+                                    </thead>
+                            
+                                    <tbody>
+                                      <tr>
+                                        <td>Sangat Ringan</td>
+                                        <td>1.30</td>
+                                        <td>1.30</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Ringan</td>
+                                        <td>1.65</td>
+                                        <td>1.55</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Sedang</td>
+                                        <td>1.76</td>
+                                        <td>1.70</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Berat</td>
+                                        <td>2.10</td>
+                                        <td>2.00</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            
+                        </div>
+                      </div>
+                      
+                        <div class="card">
+                          <div class="card-content">
+                            <span class="card-title">Hitung Kebutuhan Kalori Anda:</span>
+                            <form action="">
+                            <div class="row">
+                              <div class="input-filed col s12">
+                              <p>Jenis Kelamin:</p>
+                              <p>
+                                  <label for="kalPria">
+                                  <input name="jenisKelamin" type="radio" id="kalPria" value="Pria" checked />
+                                  <span>Pria</span>
+                                  </label>
+                                
+                              </p>
+                              <p>
+                                <label for="kalWanita">
+                                  <input name="jenisKelamin" type="radio" id="kalWanita" value="Wanita" />
+                                  <span>Wanita</span>
+                                </label>
+                              </p>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="input-field col s12 m4">
+                                <input id="kalBeratBadan" type="number"  required>
+                                <label for="kalBeratBadan">Berat Badan(kg)</label>
+                                <span id="kalBBError"></span>
+                              </div>
+                              <div class="input-field col s12 m4">
+                                <input id="kalTinggiBadan" type="number"  required>
+                                <label for="kalTinggiBadan">Tinggi Badan(cm)</label>
+                                <span id="kalTBError"></span>
+                              </div>
+                              <div class="input-field col s12 m4">
+                                <input id="kalUsia" type="number"  required>
+                                <label for="kalUsia">Usia(th)</label>
+                                <span id="kalUsiaError"></span>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="input-filed col s12">
+                              <p>Jenis Aktivitas:</p>
+                              <p>
+                                <label for="kalSangatRingan">
+                                  <input name="jenisAktivitas" type="radio" id="kalSangatRingan" checked/>
+                                  <span>Sendenter(jarang berolahraga)</span>
+                                </label>
+                              </p>
+                              <p>
+                                <label for="kalRingan">
+                                  <input name="jenisAktivitas" type="radio" id="kalRingan" />
+                                  <span>Sedikit Aktif(olahraga 1-3x/minggu)</span>
+                                </label>
+                              </p>
+                              <p>
+                                <label for="kalSedang">
+                                  <input name="jenisAktivitas" type="radio" id="kalSedang" />
+                                  <span>Cukup Aktif(olahraga 3-5x/minggu)</span>
+                                </label>
+                              </p>
+                              <p>
+                                <label for="kalBerat">
+                                  <input name="jenisAktivitas" type="radio" id="kalBerat" />
+                                  <span>Sangat Aktif(olahraga 6-7x/minggu)</span>
+                                </label>
+                              </p>
+                            </div>
+                            </div>
+                           </form>
+                            <div class="row">
+                              <div class="col s12 center">
+                                <a class=" cyan darken-4 waves-effect waves-light btn-large" id="btnHitungKalori">hitung</a>
+                              </div>
+                              
+                            </div>
+                          </div>
+                          <div class="card-reveal">
+                            <span class="card-title">Hasil:<a class="btn-floating right waves-effect waves-light red" id="btnCloseKalori"><i>X</i></a></span>
+                          <table class="highlight centered">
+                              <thead>
+                                  <tr>
+                                      <th>keterangan</th>
+                                      <th>nilai</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td>Kebutuhan Kalori</td>
+                                      <td id="totalKalori">0 cal</td>
+                                  </tr>
+                                  <tr>
+                                    <td>kebutuhan Karbohidrat</td>
+                                    <td id="totalKarbohidrat">0 gram</td>
+                                </tr>
+                                <tr>
+                                  <td>Kebutuhan Protein</td>
+                                  <td id="totalProtein">0 gram</td>
+                              </tr>
+                              <tr>
+                                <td>Kebutuhan Lemak</td>
+                                <td id="totalLemak">0 gram</td>
+                            </tr>
+                              </tbody>
+                          </table>
+                        </div>
+                            
+                            
+                            
+                        </div>
+                      
+                      
+                      
+
+                    </div>
+                  </div>
+            </div>
+			
+            

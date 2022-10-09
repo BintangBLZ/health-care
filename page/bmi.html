@@ -1,0 +1,94 @@
+<div class="container" id="main-content">
+                <h1 class="center">Index Masa Tubuh</h1>
+                <div class="row">
+                    <div class="col s12 ">
+                        <div class="card" id="cardId">
+                            <div class="card-image">
+                                <img  class="responsive-img"src="image/bmi.jpg" alt="BMI">
+                            </div>
+                            <div class="card-content">
+                                <h3>Apa Itu Index Masa Tubuh?</h3>
+                                <p>Indeks massa tubuh adalah ukuran yang digunakan untuk mengetahui status gizi seseorang yang didapatkan dari perbandingan berat dan tinggi badan.  Maka itu, setiap orang harus menghitung berapa nilai IMT-nya agar tahu status gizi tubuhnya normal atau tidak.</p>
+                                <p>Indeks massa tubuh adalah metrik standar yang digunakan untuk menentukan siapa saja yang masuk dalam golongan berat badan sehat dan tidak sehat. Indeks massa tubuh alias BMI membandingkan berat badan Anda dengan tinggi badan Anda, dihitung dengan membagi berat badan dalam kilogram dengan tinggi badan dalam meter kuadrat.</p>
+                                <table class=" highlight">
+                                    <thead>
+                                        <tr>
+                                            <th>Nilai</th>
+                                            <th>kriteria</th>
+                                        </tr>
+                                      </thead>
+                              
+                                      <tbody>
+                                        <tr>
+                                          <td>kurang dari 18.5</td>
+                                          <td>Berat Badan Kurang</td>
+                                        </tr>
+                                        <tr>
+                                            <td>18.5-22.9</td>
+                                            <td>Berat Badan Normal</td>
+                                          </tr>
+                                          <tr>
+                                            <td>23.0-29.9</td>
+                                            <td>Berat Badan Berlebih</td>
+                                          </tr>
+                                          <tr>
+                                            <td>lebih dari sama dengan 30.0</td>
+                                            <td>Obesitas</td>
+                                          </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m12 l12">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-title">Hitung Bmi Anda</span>
+                                <form class="col s12" id="bmiForm">
+                                    <div class="row">
+                                      <div class="input-field col s6">
+                                        <input id="beratBadan" type="number" class="validate" required>
+                                        <label for="beratBadan" data-error="wrong" data-success="right">Berat Badan(kg)</label>
+                                        <span id="bbError"></span>
+                                      </div>
+                                      <div class="input-field col s6">
+                                        <input id="tinggiBadan" type="number" class="validate" required min="1" max="400">
+                                        <label for="tinggiBadan" data-error="wrong" data-success="right">tinggi Badan(cm)</label>
+                                        <span id="tbError"></span>
+                                      </div>
+                                     
+                                     
+                                    </div>
+                                  </form> 
+                                  <div class="row">
+                                    <div class="col s12 center">
+                                        <a class=" cyan darken-4 waves-effect waves-light btn-large" id="btnHitungBMI">hitung</a>
+                                      </div>
+                                      
+                                  </div>
+                                </div>
+                                  <div class="card-reveal">
+                                      <span class="card-title">hasil<a class="btn-floating right waves-effect waves-light red" id="btnCloseBMI"><i>X</i></a></span>
+                                    <table class="highlight centered">
+                                        <thead>
+                                            <tr>
+                                                <th>nilai bmi anda</th>
+                                                <th>kriteria</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td id="hasilBMI">0</td>
+                                                <td id="kriteriaBMI">0</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                  </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            
